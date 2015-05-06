@@ -146,7 +146,8 @@ body textarea {
     resize: none;
 }
 input[type=button],
-input[type=submit] {
+input[type=submit],
+.owm_attach_win .owm_btn_wrap .owm_attach_label {
     font-family:  "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; 
     font-weight:600; 
     font-stretch:normal;
@@ -3959,7 +3960,8 @@ a.owm_topic_list_format.owm_topic_list_unread {
 .owm_topic_sticky_icon {
     background: url(images/ico_forum_sticky.png) center center no-repeat;
 }
-.owm_topic_attach_icon {
+.owm_topic_attach_icon,
+.owm_attach_win .ow_file_attachment_name {
     background: url(images/ico_forum_attach.png) center center no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -3968,7 +3970,8 @@ a.owm_topic_list_format.owm_topic_list_unread {
             background-image: url(images/ico_forum_sticky@2x.png);
             background-size: 12px 13px;
         }
-        .owm_topic_attach_icon {
+        .owm_topic_attach_icon,
+        .owm_attach_win .ow_file_attachment_name {
             background-image: url(images/ico_forum_attach@2x.png);
             background-size: 11px 13px;
         }
@@ -4156,7 +4159,8 @@ a.owm_topic_list_format.owm_topic_list_unread {
     width: 56.2%;
     vertical-align: top;
 }
-.owm_attach_preview_close {
+.owm_attach_preview_close,
+.owm_attach_win .ow_file_attachment_close {
     position: absolute;
     right: 0;
     top: 0;
@@ -4179,7 +4183,9 @@ a.owm_topic_list_format.owm_topic_list_unread {
     right: 0;
     background: url(images/ico_video_play.png) no-repeat center center;
 }
-.owm_attach_label {
+.owm_attach_label,
+.owm_attach_win .ow_file_attachment_block1,
+.owm_attach_win .ow_file_attachment_block2 {
     display: block;
     overflow: hidden;
     position: relative;
@@ -4187,7 +4193,8 @@ a.owm_topic_list_format.owm_topic_list_unread {
     color: #acacac;
     padding-right: 19px;
 }
-.owm_attach_label [type=file] {
+.owm_attach_label [type=file],
+.owm_attach_win .ow_attachments input[type=file] {
     cursor: pointer;
     display: block;
     font-size: 999px;
@@ -4203,17 +4210,20 @@ a.owm_topic_list_format.owm_topic_list_unread {
 .owm_forum_topic_attach_info {
     padding-top: 5px;
 }
-.owm_forum_topic_attach_info .owm_topic_attach_icon {
+.owm_forum_topic_attach_info .owm_topic_attach_icon,
+.owm_attach_win .ow_file_attachment_name {
     padding-left: 19px;
     width: auto;
     height: auto;
     float: none;
     background-position: left center;
 }
-.owm_forum_topic_attach_info span {
+.owm_forum_topic_attach_info span,
+.owm_attach_win .ow_file_attachment_size {
     color: #313131;
 }
-.owm_attach_label .owm_attach_preview_close {
+.owm_attach_label .owm_attach_preview_close,
+.owm_attach_win .ow_file_attachment_close {
     width: 12px;
     height: 17px;
     right: 0px;
@@ -4223,8 +4233,40 @@ a.owm_topic_list_format.owm_topic_list_unread {
     z-index: 2;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-       only screen and (min-device-pixel-ratio : 2) { 
+       only screen and (min-device-pixel-ratio : 2) {
+        .owm_attach_label .owm_attach_preview_close,
+        .owm_attach_win .ow_file_attachment_close  {
         background-image: url(images/ico_close_attach@2x.png);
+        }
+}
+.owm_forum_attach_win .owm_btn_wrap {
+    margin-top: 0px;
+}
+.owm_forum_attach_win .owm_btn_wrap .ow_button,
+.owm_attach_win .owm_btn_wrap .owm_attach_label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.owm_forum_attach_win .owm_btn_wrap .ow_button:first-child {
+    margin-right: 16px;
+}
+.owm_forum_attach_win .owm_btn_wrap .ow_button .ow_button {
+    margin: 0px;
+}
+.owm_attach_win .ow_file_attachment_name {
+    font-size: 81.25%;
+}
+.owm_attach_win .ow_status_update_btn_block {
+    display: none;
+}
+.owm_attach_win .ow_file_attachment_block1,
+.owm_attach_win .ow_file_attachment_block2 {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.owm_attach {
+    position: relative;
+    overflow: hidden;
 }
 /* ======== Forum topic view ======== */
 .owm_forum_topic_view .owm_topic_name.owm_padding {
