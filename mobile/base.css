@@ -412,6 +412,10 @@ body .owm_no_padding {
 .owm_padding {
     padding: 10px;
 }
+.owm_border {
+    border-style: solid;
+    border-color: #d7d7d7;
+}
 .owm_invitation,
 input.owm_invitation,
 textarea.owm_invitation,
@@ -2986,7 +2990,6 @@ only screen and (min-device-pixel-ratio : 2) {
        background-size: 154px 147px;
     }
 }
-
 /* ======== End of the Maintenance page ======== */
 
 /* ======== Splash screen page ======== */
@@ -3057,6 +3060,9 @@ only screen and (min-device-pixel-ratio : 2) {
     line-height: 39px;
     display: block;
 }
+.owm_view_more .owm_context_action_list li{
+    min-width: 206px;
+}
 .owm_red_btn {
     border: none;
     color: #f42217;
@@ -3069,12 +3075,14 @@ only screen and (min-device-pixel-ratio : 2) {
     top: 32px;
 }
 .owm_btn_list_item_wrap .owm_context_pos_right,
-.owm_topic_name .owm_context_pos_right {
+.owm_card_cap .owm_context_pos_right,
+.owm_card_header .owm_context_pos_right {
     right: -3px;
     top: 47px;
 }
 .owm_btn_list_item_wrap .owm_context_arr_down,
-.owm_topic_name .owm_context_arr_down {
+.owm_card_cap .owm_context_arr_down,
+.owm_card_header .owm_context_arr_down {
     background: #DEDEDE;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -3101,13 +3109,15 @@ only screen and (min-device-pixel-ratio : 2) {
     vertical-align: top;    
 }
 .owm_btn_list_item_wrap .owm_context_arr_c,
-.owm_topic_name .owm_context_arr_c {
+.owm_card_cap .owm_context_arr_c,
+.owm_card_header .owm_context_arr_c {
     background: url(images/arr_down_btn_list.png) no-repeat center 12px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio : 2) {
     .owm_btn_list_item_wrap .owm_context_arr_c,
-    .owm_topic_name .owm_context_arr_c {
+    .owm_card_cap .owm_context_arr_c,
+    .owm_card_header .owm_context_arr_c {
        background-image: url(images/arr_down_btn_list_2x.png);
        background-size: 17px 12px;
     }
@@ -3961,7 +3971,8 @@ a.owm_topic_list_format.owm_topic_list_unread {
     background: url(images/ico_forum_sticky.png) center center no-repeat;
 }
 .owm_topic_attach_icon,
-.owm_attach_win .ow_file_attachment_name {
+.owm_attach_win .ow_file_attachment_name,
+.owm_attach_icon {
     background: url(images/ico_forum_attach.png) center center no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -3971,7 +3982,8 @@ a.owm_topic_list_format.owm_topic_list_unread {
             background-size: 12px 13px;
         }
         .owm_topic_attach_icon,
-        .owm_attach_win .ow_file_attachment_name {
+        .owm_attach_win .ow_file_attachment_name,
+        .owm_attach_icon {
             background-image: url(images/ico_forum_attach@2x.png);
             background-size: 11px 13px;
         }
@@ -4211,7 +4223,8 @@ a.owm_topic_list_format.owm_topic_list_unread {
     padding-top: 5px;
 }
 .owm_forum_topic_attach_info .owm_topic_attach_icon,
-.owm_attach_win .ow_file_attachment_name {
+.owm_attach_win .ow_file_attachment_name,
+.owm_attach_icon {
     padding-left: 19px;
     width: auto;
     height: auto;
@@ -4219,7 +4232,8 @@ a.owm_topic_list_format.owm_topic_list_unread {
     background-position: left center;
 }
 .owm_forum_topic_attach_info span,
-.owm_attach_win .ow_file_attachment_size {
+.owm_attach_win .ow_file_attachment_size,
+.owm_attach_info span {
     color: #313131;
 }
 .owm_attach_label .owm_attach_preview_close,
@@ -4277,3 +4291,92 @@ a.owm_topic_list_format.owm_topic_list_unread {
     padding-left: 10px;
     font-size: 68.75%;
 }
+.owm_post_content {
+    font-size: 81.25%;
+}
+.owm_post_content p {
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+.owm_post_action {
+    font-size: 81.25%;
+}
+/* ======== End of the Forum topic view ======== */
+/* ======== Card styles ======== */
+.owm_card_cap,
+.owm_card_header {
+    position: relative;    
+}
+.owm_card_cap_context,
+.owm_card_user_context {
+    padding-right: 44px;
+}
+.owm_card_cap_context .owm_view_more,
+.owm_card_user_context~.owm_view_more {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    min-width: 42px;
+}
+.owm_card_title {
+    font-size: 114.3%;
+    font-weight: bold;
+}
+.owm_card_date {
+    font-size: 68.75%;
+}
+.owm_card_user_pic {
+    float: left;
+    margin-right: -36px;
+}
+.owm_card_user_info {
+    padding-left: 44px;
+}
+.owm_card_user_name {
+    display: inline-block;
+}
+.owm_card_user_cont {
+    font-size: 81.25%;
+}
+.owm_card_user .owm_profile_online {
+    display: inline-block;
+    margin: 0px 8px 0px 5px;
+}
+.owm_card_content {
+    border-top: 1px solid #b9b9b9;
+}
+.owm_card_body {
+    border-top: 1px solid #d7d7d7;
+    padding: 16px 0;
+}
+.owm_card_toolbar_btns li {
+    float: left;
+    width: 33%;
+    padding: 16px 0px;
+    text-align: center;
+}
+/* ======== End of the Card styles ======== */
+/* ======== Attachments styles ======== */
+.owm_attachments {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-width: 1px 0px;
+}
+.owm_attachments .owm_attach_label {
+    display: inline-block;
+}
+.owm_attach_download {
+    width: 24px;
+    height: 24px;
+    background: url(images/ico_download.png) no-repeat 0px 0px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio : 2) {
+        .owm_attach_download {
+            background-image: url(images/ico_download@2x.png);
+            background-size: 24px 24px;
+        }
+}
+/* ======== End of the Attachments styles ======== */
