@@ -415,6 +415,7 @@ body .owm_no_padding {
 .owm_border {
     border-style: solid;
     border-color: #d7d7d7;
+    border-width: 0px 0px 0px 0px;
 }
 .owm_invitation,
 input.owm_invitation,
@@ -4205,6 +4206,9 @@ a.owm_topic_list_format.owm_topic_list_unread {
     color: #acacac;
     padding-right: 19px;
 }
+.owm_attach_label {
+    padding-right: 26px;
+}
 .owm_attach_label [type=file],
 .owm_attach_win .ow_attachments input[type=file] {
     cursor: pointer;
@@ -4226,6 +4230,7 @@ a.owm_topic_list_format.owm_topic_list_unread {
 .owm_attach_win .ow_file_attachment_name,
 .owm_attach_icon {
     padding-left: 19px;
+    min-height: 18px;
     width: auto;
     height: auto;
     float: none;
@@ -4292,10 +4297,12 @@ a.owm_topic_list_format.owm_topic_list_unread {
     font-size: 68.75%;
 }
 .owm_post_content {
+    padding: 10px 0px;
     font-size: 81.25%;
 }
 .owm_post_content p {
     margin-bottom: 10px;
+    line-height: 1.2em;
     padding: 0px 10px;
 }
 .owm_post_action {
@@ -4337,6 +4344,7 @@ a.owm_topic_list_format.owm_topic_list_unread {
 }
 .owm_card_user_cont {
     font-size: 81.25%;
+    padding-top: 3px;
 }
 .owm_card_user .owm_profile_online {
     display: inline-block;
@@ -4346,14 +4354,54 @@ a.owm_topic_list_format.owm_topic_list_unread {
     border-top: 1px solid #b9b9b9;
 }
 .owm_card_body {
-    border-top: 1px solid #d7d7d7;
-    padding: 16px 0;
+    padding: 10px 0px;
+    border-top-width: 1px;
+}
+.owm_card_footer {
+    padding-bottom: 10px;
+}
+.owm_card_toolbar_btns {
+    border-width: 1px;
 }
 .owm_card_toolbar_btns li {
     float: left;
-    width: 33%;
+}
+.owm_card_toolbar_btns a {
+    color: #acacac;
+    display: block;
     padding: 16px 0px;
-    text-align: center;
+    text-align: center;    
+}
+.owm_card_toolbar_flag,
+.owm_card_toolbar_share {
+    border-left-width: 1px;
+}
+.owm_card_toolbar_quote span {
+    padding-left: 24px;
+    background: url(images/ico_quote.png) no-repeat 0px center;
+}
+.owm_card_toolbar_flag span {
+    padding-left: 20px;
+    background: url(images/ico_flag.png) no-repeat 0px center;
+}
+.owm_card_toolbar_share span {
+    padding-left: 23px;
+    background: url(images/ico_share.png) no-repeat 0px center;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio : 2) {
+        .owm_card_toolbar_quote span {
+            background-image: url(images/ico_quote@2x.png);
+            background-size: 16px 17px;
+        }
+        .owm_card_toolbar_flag span {
+            background-image: url(images/ico_flag@2x.png);
+            background-size: 12px 17px;            
+        }
+        .owm_card_toolbar_share span {
+            background-image: url(images/ico_share@2x.png);
+            background-size: 15px 17px;
+        }
 }
 /* ======== End of the Card styles ======== */
 /* ======== Attachments styles ======== */
@@ -4366,6 +4414,7 @@ a.owm_topic_list_format.owm_topic_list_unread {
 }
 .owm_attachments .owm_attach_label {
     display: inline-block;
+    line-height: 24px;
 }
 .owm_attach_download {
     width: 24px;
@@ -4379,4 +4428,82 @@ a.owm_topic_list_format.owm_topic_list_unread {
             background-size: 24px 24px;
         }
 }
-/* ======== End of the Attachments styles ======== */
+.owm_attachments .owm_attach_info {
+    margin-bottom: 10px;
+}
+.owm_attachments .owm_attach_info:last-child {
+    margin-bottom: 0px;
+}
+.owm_attach_edit {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background: url(images/ico_edit.png) no-repeat 0px 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio : 2) {
+        .owm_ico_fb {
+            background-image: url(images/ico_edit@2x.png);
+            background-size: 18px 18px;
+        }
+}
+/* ======== End of the Attachments styles ======== *//* ======== Share styles ======== */
+.owm_share_item {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 30px;
+    color: #929292;
+    margin-bottom: 16px;
+}
+.owm_share_item:last-child {
+    margin-bottom: 0px;
+}
+.owm_ico_fb {
+    background: url(images/ico_fb.png) no-repeat 0px center;
+}
+.owm_ico_gplus {
+    background: url(images/ico_gplus.png) no-repeat 0px center;
+}
+.owm_ico_tw {
+    background: url(images/ico_tw.png) no-repeat 0px center;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio : 2) {
+        .owm_ico_fb {
+            background-image: url(images/ico_fb@2x.png);
+            background-size: 24px 24px;
+        }
+        .owm_ico_gplus {
+            background-image: url(images/ico_gplus@2x.png);
+            background-size: 24px 24px;
+        }
+        .owm_ico_tw {
+            background-image: url(images/ico_tw@2x.png);
+            background-size: 24px 24px;
+        }
+}
+/* ======== End of the Share styles ======== */
+/* ======== Quote styles ======== */
+.owm_quote {
+    position: relative;
+}
+.owm_quote .ow_quote_header {
+    display: block;
+    border-bottom: 1px solid #b9b9b9;
+    min-height: 18px;
+    padding: 4px 28px 3px 10px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+.owm_quote .ow_quote_cont_wrap {
+    display: block;
+    padding: 10px;
+}
+.owm_quote blockquote.ow_quote {
+    border: 1px solid #b9b9b9;
+}
+/* ======== End of the Quote styles ======== */
