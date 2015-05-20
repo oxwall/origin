@@ -4450,7 +4450,8 @@ a.owm_topic_list_format.owm_topic_list_unread {
             background-size: 18px 18px;
         }
 }
-/* ======== End of the Attachments styles ======== *//* ======== Share styles ======== */
+/* ======== End of the Attachments styles ======== */
+/* ======== Share styles ======== */
 .owm_share_item {
     display: block;
     height: 24px;
