@@ -4518,3 +4518,26 @@ a.owm_topic_list_format.owm_topic_list_unread {
     border: 1px solid #b9b9b9;
 }
 /* ======== End of the Quote styles ======== */
+/* ======== Paging styles ======== */
+.owm_paging_prev,
+.owm_paging_next {
+    display: inline-block;
+    width: 74px;
+    height: 30px;
+    background: #ccc url(images/arr_left_white.png) center center no-repeat;
+}
+.owm_paging_next {
+    background-image: url(images/arr_right_white.png);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio : 2) {
+        .owm_paging_prev {
+            background-image: url(images/arr_left_white@2x.png);
+            background-size: 21px 33px;
+        }
+        .owm_paging_next {
+            background-image: url(images/arr_right_white@2x.png);
+            background-size: 21px 33px;
+        }        
+}
+/* ======== End of the Paging styles ======== */
