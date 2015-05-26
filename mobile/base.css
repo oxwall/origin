@@ -2952,30 +2952,38 @@ only screen and (min-device-pixel-ratio : 2) {
     border-bottom: 1px solid #c8c8c8;
 }
 .owm_user_list_item {
-    padding-left: 44px;
     padding-right: 38px;
-    min-height: 34px;
+    min-height: 50px;
     position: relative;
+    font-size: 81.25%;
 }
 .owm_user_list_item .owm_avatar {
-    width: 36px;
-    height: 36px;
     display: block;
-    position: absolute;
-    top: 50%;
-    margin-top: -17px;
-    left: 0;
+    width: 52px;
+    height: 52px;
+    float: left;
+    margin-right: -60px;
+}
+.owm_user_list_item .owm_avatar img {
+    height: 52px;
+    width: 52px;
+}
+.owm_user_list_info {
+    padding-left: 60px;
 }
 .owm_user_list_name {
-    display: table;
-    height: 34px;
+    margin-bottom: 2px;
 }
 .owm_user_list_name span {
     vertical-align: middle;
-    font-size: 81.25%;
     font-weight: bold;
     color: #555;
-    display: table-cell;
+}
+.owm_user_list_cont {
+    margin-bottom: 2px;
+}
+.owm_user_list_cont:last-child {
+    margin-bottom: 0px;
 }
 .owm_user_list_item .owm_profile_online {
     position: absolute;
@@ -4320,6 +4328,9 @@ a.owm_topic_list_format.owm_topic_list_unread {
 }
 /* ======== End of the Forum topic view ======== */
 /* ======== Card styles ======== */
+.owm_nav_cap {
+    border-bottom: 1px solid #b5b5b5;
+}
 .owm_nav_cap,
 .owm_card_header {
     position: relative;    
