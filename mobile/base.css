@@ -4323,6 +4323,10 @@ a.owm_topic_list_format.owm_topic_list_unread {
     line-height: 1.2em;
     padding: 0px 10px;
 }
+.owm_post_content img {
+    width: 100%;
+    margin-bottom: 10px;    
+}
 .owm_post_action {
     font-size: 81.25%;
 }
