@@ -4124,6 +4124,10 @@ a.owm_topic_list_format.owm_topic_list_unread {
             background-image: url(images/ico_wysiwyg_video_hover@2x.png);
         }
 }
+.owm_suitup-editor img {
+    display: block;
+    max-height: 150px;
+}
 /* ======== Forum topic ======== */
 .owm_forum_topic_input {
     min-height: 32px;
