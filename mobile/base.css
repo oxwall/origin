@@ -4124,9 +4124,10 @@ a.owm_topic_list_format.owm_topic_list_unread {
             background-image: url(images/ico_wysiwyg_video_hover@2x.png);
         }
 }
-.owm_suitup-editor img {
-    display: block;
+.owm_suitup-editor img,
+.owm_suitup-editor iframe {
     max-height: 150px;
+    width: auto;
 }
 /* ======== Forum topic ======== */
 .owm_forum_topic_input {
@@ -4327,9 +4328,10 @@ a.owm_topic_list_format.owm_topic_list_unread {
     line-height: 1.2em;
     padding: 0px 10px;
 }
-.owm_post_content img {
+.owm_post_content img,
+.owm_post_content iframe {
     width: 100%;
-    margin-bottom: 10px;    
+    margin: 5px 0px;    
 }
 .owm_post_action {
     font-size: 81.25%;
