@@ -2826,6 +2826,27 @@ input.owm_sidebar_profile_logout {
     border: 1px solid #C8C8C8;
 }
 /* ======== End of the Avatar list ======== */
+/* ======== Index Photo list ======== */
+.owm_index_photo_list {
+    text-align: center;
+}
+.owm_index_photo_item {
+    margin: 5px;
+    display: inline-block;
+}
+.owm_index_photo_item a {
+    display: inline-block;
+}
+.owm_index_photo_item img {
+    width: 60px;
+    height: 60px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius: 2px; 
+    vertical-align: top;
+    border: 1px solid #C8C8C8;
+}
+/* ======== End of the Index Photo list ======== */
 /* ======== Box styles ======== */
 .owm_box {
     margin-bottom: 20px;
@@ -4476,7 +4497,7 @@ a.owm_topic_list_format.owm_topic_list_unread {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
        only screen and (min-device-pixel-ratio : 2) {
-        .owm_ico_fb {
+        .owm_attach_edit {
             background-image: url(images/ico_edit@2x.png);
             background-size: 18px 18px;
         }
