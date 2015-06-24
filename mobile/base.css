@@ -4091,6 +4091,11 @@ input[type="radio"] ~ label {
     z-index: 2;
     background-position: center center;
 }
+.owm_quote_win iframe,
+.owm_quote_win img {
+    width: auto;
+    height: 150px;
+}
 body .owm_suitup-editor {
     border-width: 0 0 1px 0;: 
 }
