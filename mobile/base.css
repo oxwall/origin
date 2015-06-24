@@ -140,6 +140,7 @@ textarea {
     border-radius: 0px;
     vertical-align: top;
     margin: 0;
+    line-height: 1.4em;
 }
 body textarea {
     padding: 15px 6px;
@@ -326,40 +327,6 @@ only screen and (min-device-pixel-ratio : 2) {
         font-size: 100%;
     }
 }
-.owm_nav_cap_left {
-    display: block;
-    height: 35px;
-    width: 23px;
-    padding: 11px;
-    background: url(images/arr_left_grey.png) no-repeat center center;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-       only screen and (min-device-pixel-ratio : 2) { 
-        .owm_nav_cap_left {
-            background-image: url(images/arr_left_grey@2x.png);
-            background-size: 10px 17px;
-        }
-}
-.owm_nav_cap_right {
-    display: block;
-    height: 35px;
-    width: 23px;
-    padding: 11px;
-    background: url(images/arr_right_grey.png) no-repeat center center;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-       only screen and (min-device-pixel-ratio : 2) { 
-        .owm_nav_cap_right {
-            background-image: url(images/arr_right_grey@2x.png);
-            background-size: 10px 17px;
-        }
-}
-.owm_nav_cap_left_space {
-    padding-left: 10px;
-}
-.owm_nav_cap_rigth_space {
-    padding-right: 10px;
-}
 footer {
     bottom: 0px;
 }
@@ -450,6 +417,117 @@ body .owm_no_padding {
     border-style: solid;
     border-color: #d7d7d7;
     border-width: 0px 0px 0px 0px;
+}
+.owm_nav_left_item {
+    padding: 0px 19px 0px 0px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #c8c8c8;
+    font-family: 'open_sansbold', "Helvetica CY", "Arial Black", "Nimbus Sans L", sans-serif;
+}
+.owm_nav_left_item:first-child {
+    border-top: 1px solid #c8c8c8;
+}
+.owm_nav_left_item a {
+    color: #555;
+    line-height: 20px;
+    font-size: 125%;
+    padding: 20px 0px 20px 10px;
+    display: block;
+    text-decoration: none;
+}
+.owm_nav_left_item_icon {
+    margin: 0px 42px 0px 0px;
+}
+.owm_nav_left_item .owm_nav_left_item_add,
+.owm_nav_left_item_add {
+    height: 30px;
+    width: 35px;
+    float: right;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius: 4px;
+    padding: 0px 0px 0px 0px;
+    margin: 13px 0px 0px -34px;
+    background: #FF7000 url(images/ico_plus.png) no-repeat center center;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio : 2) {
+        .owm_nav_left_item_add {
+            background-image: url(images/ico_plus@2x.png);
+            background-size: 13px 13px;
+    }
+}
+.owm_nav_left_bottom .owm_nav_left_item {
+    padding-right: 0;
+}
+.owm_nav_left_bottom a {
+    color: #929292;
+    padding: 7px 19px 7px 10px;
+    font-size: 81.25%;
+}
+.owm_nav_cap {
+    border-bottom-width: 1px;
+    position: relative;    
+}
+.owm_nav_cap h3 {
+    display: inline-block;
+    font-family: 'open_sansbold', "Helvetica CY", "Arial Black", "Nimbus Sans L", sans-serif;
+    font-size: 125%;
+    padding: 14px;
+    color: #555555;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;   
+}
+.owm_nav_cap_left_cont h3 {
+    padding-left: 45px;
+ }
+.owm_nav_cap_right_cont h3 {
+    padding-right: 55px;
+}
+.owm_nav_cap_left_cont .owm_float_left {
+    margin-right: -45px;
+}
+.owm_nav_cap_right_cont .owm_float_right {
+    margin-left: -55px;
+    margin-right: 10px;
+}
+.owm_nav_cap .owm_nav_left_item_add,
+.owm_nav_cap .owm_view_more {
+    margin-top: 13px;
+}
+.owm_nav_cap .owm_ic_close_cont {
+    background-position: 0px center;
+}
+.owm_nav_cap_left {
+    display: block;
+    height: 57px;
+    width: 45px;
+    background: url(images/arr_left_grey.png) no-repeat center center;
+    position: relative;
+    z-index: 2;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio : 2) { 
+        .owm_nav_cap_left {
+            background-image: url(images/arr_left_grey@2x.png);
+            background-size: 10px 17px;
+        }
+}
+.owm_nav_cap_right {
+    display: block;
+    height: 57px;
+    width: 23px;
+    background: url(images/arr_right_grey.png) no-repeat center center;
+    position: relative;
+    z-index: 2;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio : 2) { 
+        .owm_nav_cap_right {
+            background-image: url(images/arr_right_grey@2x.png);
+            background-size: 10px 17px;
+        }
 }
 .owm_invitation,
 input.owm_invitation,
@@ -853,53 +931,6 @@ html[dir=rtl] .owm_sidebar_right_active #main {
     display: block;
     text-decoration: none;
     height: 93px;
-}
-.owm_nav_left_item {
-    padding: 0px 19px 0px 0px;
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #c8c8c8;
-    font-family: 'open_sansbold', "Helvetica CY", "Arial Black", "Nimbus Sans L", sans-serif;
-}
-.owm_nav_left_item:first-child {
-    border-top: 1px solid #c8c8c8;
-}
-.owm_nav_left_item a {
-    color: #555;
-    line-height: 20px;
-    font-size: 125%;
-    padding: 20px 0px 20px 10px;
-    display: block;
-    text-decoration: none;
-}
-.owm_nav_left_item_icon {
-    margin: 0px 42px 0px 0px;
-}
-.owm_nav_left_item .owm_nav_left_item_add,
-.owm_nav_left_item_add {
-    height: 30px;
-    width: 35px;
-    float: right;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    border-radius: 4px;
-    padding: 0px 0px 0px 0px;
-    margin: 13px 0px 0px -34px;
-    background: #FF7000 url(images/ico_plus.png) no-repeat center center;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-device-pixel-ratio : 2) {
-        .owm_nav_left_item_add {
-            background-image: url(images/ico_plus@2x.png);
-            background-size: 13px 13px;
-    }
-}
-.owm_nav_left_bottom .owm_nav_left_item {
-    padding-right: 0;
-}
-.owm_nav_left_bottom a {
-    color: #929292;
-    padding: 7px 19px 7px 10px;
-    font-size: 81.25%;
 }
 /* ========= Profile block ======== */
 .owm_profile_block {
@@ -1836,6 +1867,10 @@ only screen and (min-device-pixel-ratio : 2) {
 .ow_ic_gift {
     background-image: url(images/ico_gift.png);
 }
+.owm_ic_close_cont {
+    background-image: url(images/ico_close_attach.png);
+    background-repeat: no-repeat;
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio : 2) {
     .ow_ic_event {
@@ -1855,6 +1890,10 @@ only screen and (min-device-pixel-ratio : 2) {
     }
     .ow_ic_gift {
     background-image: url(images/ico_gift@2x.png);
+    }
+    .owm_ic_close_cont {
+    background-image: url(images/ico_close_attach@2x.png);
+    background-size: 12px 12px;
     }
 }
 /* ======== End of the Icons styles ======== */
@@ -2865,8 +2904,7 @@ input.owm_sidebar_profile_logout {
     background-color: #f4f4f4;
 }
 .owm_box_cap h3,
-.owm_box_cap_empty h3,
-.owm_nav_cap h3 {
+.owm_box_cap_empty h3 {
     display: inline-block;
     font-family: 'open_sansbold', "Helvetica CY", "Arial Black", "Nimbus Sans L", sans-serif;
     font-size: 125%;
@@ -3866,14 +3904,19 @@ input[type="radio"] ~ label {
             background-size: 100% auto;
         }
 }
-a.owm_forum_list_format,
-a.owm_topic_list_format {
+.owm_search_wrap .owm_lbutton {
+    background-color: #dedede;
+    color: #929292;
+    font-weight: bold;
+}
+.owm_forum_list_format,
+.owm_topic_list_format {
     padding: 4px;
     display: block;
     color: #929292;
 }
-a.owm_forum_list_format.owm_forum_list_unread,
-a.owm_topic_list_format.owm_topic_list_unread {
+.owm_forum_list_format.owm_forum_list_unread,
+.owm_topic_list_format.owm_topic_list_unread {
     color: #626262;
 }
 .owm_forum_name,
@@ -3890,6 +3933,7 @@ a.owm_topic_list_format.owm_topic_list_unread {
 .owm_forum_counter {
     margin-right: -40px;
     font-weight: normal;
+    min-height: 22px;
 }
 .owm_topic_name .owm_forum_counter {
     padding-left: 26px;
@@ -3971,34 +4015,6 @@ a.owm_topic_list_format.owm_topic_list_unread {
             background-size: 9px 9px;
         }
 }
-.owm_forum_page h3 {
-    padding-left: 14px;
-}
-.owm_forum_section h3 {
-    padding-left: 0;
-}
-.owm_forum_page .owm_box_menu {
-    padding-right: 14px;
-}
-.owm_forum_page .owm_box_body {
-    border-bottom: none;
-}
-.owm_forum_page .owm_box_bottom {
-    border-bottom: 1px solid #e8e8e8;
-    border-top: 1px solid #e8e8e8;
-}
-.owm_forum_section .owm_box {
-    border-top: none;
-}
-.owm_forum_section .owm_box_cap {
-    border-bottom: 1px solid #b5b5b5;
-}
-.owm_forum_section .owm_box_body {
-    border-top: 1px solid #b5b5b5;
-}
-.owm_forum_page .owm_nav_left_item_add {
-    margin: 13px 11px 0 0;
-}
 .owm_topic_sticky_icon,
 .owm_topic_attach_icon {
     width: 13px;
@@ -4036,6 +4052,54 @@ a.owm_topic_list_format.owm_topic_list_unread {
 }
 .owm_forum_search_form {
     padding-top: 8px;
+}
+/* Forum section, Forum group */
+.owm_forum_section_cap.owm_nav_cap {
+    border-top: 1px solid #b5b5b5;
+    border-bottom-color: #e8e8e8;
+}
+.owm_forum_section_body,
+.owm_forum_group_body {
+    font-size: 87.5%;
+}
+.owm_forum_section_toolbar,
+.owm_forum_group_toolbar {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+/* Forum topic write, edit */
+.owm_forum_edit_topic_win textarea,
+.owm_forum_new_topic_win textarea {
+    border-top-width: 0;
+    font-size: 100%;
+}
+.owm_quote_link_wrap {
+    position: relative;
+    font-size: 87.5%;
+    border-bottom-width: 1px;
+}
+.owm_quote_link {
+    display: inline-block;
+    padding: 5px 16px 5px 0px;
+}
+.owm_quote_close {
+    position: absolute;
+    width: 12px;
+    height: 17px;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    background-position: center center;
+}
+body .owm_suitup-editor {
+    border-width: 0 0 1px 0;: 
+}
+body a.owm_suitup-control:first-child, 
+body span.owm_suitup-control:first-child {
+    border-left-width: 1px;
+}
+body a.owm_suitup-control.active {
+    background-color: #FF7000;
 }
 /* ======== Wysiwyg ======== */
 .owm_wysiwyg_toolbar ul li {
@@ -4153,12 +4217,13 @@ a.owm_topic_list_format.owm_topic_list_unread {
 /* ======== Forum topic ======== */
 .owm_forum_topic_input {
     min-height: 32px;
+    font-size: 87.5%;
+    line-height: 1.4em;
 }
 .owm_forum_topic_body {
-    border-top: 1px solid #b9b9b9;
 }
 .owm_forum_topic_bottom {
-    border-top: 1px solid #d7d7d7;
+    border-top-width: 1px;
 }
 .owm_forum_topic_title input[type=text] {
     border-color: #d7d7d7;
@@ -4289,7 +4354,7 @@ a.owm_topic_list_format.owm_topic_list_unread {
 .owm_attach_win .ow_file_attachment_close {
     width: 12px;
     height: 17px;
-    right: 0px;
+    right: 5px;
     top: 0px;
     background-color: transparent;
     background-image: url(images/ico_close_attach.png);
@@ -4302,18 +4367,18 @@ a.owm_topic_list_format.owm_topic_list_unread {
         background-image: url(images/ico_close_attach@2x.png);
         }
 }
-.owm_forum_attach_win .owm_btn_wrap {
+.owm_attach_win .owm_btn_wrap {
     margin-top: 0px;
 }
-.owm_forum_attach_win .owm_btn_wrap .ow_button,
+.owm_attach_win .owm_btn_wrap .ow_button,
 .owm_attach_win .owm_btn_wrap .owm_attach_label {
     display: inline-block;
     vertical-align: middle;
 }
-.owm_forum_attach_win .owm_btn_wrap .ow_button:first-child {
+.owm_attach_win .owm_btn_wrap .ow_button:first-child {
     margin-right: 16px;
 }
-.owm_forum_attach_win .owm_btn_wrap .ow_button .ow_button {
+.owm_attach_win .owm_btn_wrap .ow_button .ow_button {
     margin: 0px;
 }
 .owm_attach_win .ow_file_attachment_name {
@@ -4327,50 +4392,47 @@ a.owm_topic_list_format.owm_topic_list_unread {
     margin-top: 10px;
     padding-bottom: 10px;
 }
+.owm_attach_win .ow_file_attachment_block1:first-child,
+.owm_attach_win .ow_file_attachment_block2:first-child {
+    margin-top: 5px;
+}
 .owm_attach {
     position: relative;
     overflow: hidden;
 }
 /* ======== Forum topic view ======== */
-.owm_forum_topic_view .owm_topic_name.owm_padding {
-    padding-bottom: 0px;
-    padding-right: 10px;
-}
 .owm_forum_topic_date {
     padding-left: 10px;
     font-size: 68.75%;
 }
 .owm_post_content {
-    padding: 10px 0px;
+    padding: 10px 10px;
     font-size: 81.25%;
+    line-height: 1.4em;
 }
 .owm_post_content p {
     margin-bottom: 10px;
-    line-height: 1.2em;
-    padding: 0px 10px;
+    line-height: 1.4em;
 }
 .owm_post_content img,
 .owm_post_content iframe {
     width: 100%;
-    margin: 5px 0px;    
+    margin: 10px 0px;    
+}
+.owm_post_content .owm_lbutton {
+    vertical-align: middle;
 }
 .owm_post_action {
     font-size: 81.25%;
 }
 /* ======== End of the Forum topic view ======== */
 /* ======== Card styles ======== */
-.owm_nav_cap {
-    border-bottom: 1px solid #b5b5b5;
-}
-.owm_nav_cap,
 .owm_card_header {
     position: relative;    
 }
-.owm_nav_cap_context,
 .owm_card_user_context {
     padding-right: 54px;
 }
-.owm_nav_cap_context .owm_view_more,
 .owm_card_user_context~.owm_view_more {
     position: absolute;
     top: 12px;
@@ -4403,7 +4465,8 @@ a.owm_topic_list_format.owm_topic_list_unread {
     margin: 0px 8px 0px 5px;
 }
 .owm_card_content {
-    border-top: 1px solid #b9b9b9;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
 }
 .owm_card_body {
     padding: 10px 0px;
@@ -4412,11 +4475,16 @@ a.owm_topic_list_format.owm_topic_list_unread {
 .owm_card_footer {
     padding-bottom: 10px;
 }
-.owm_card_toolbar_btns {
-    border-width: 1px;
+.owm_card_toolbar {
+    border-bottom-width: 1px;
 }
 .owm_card_toolbar_btns li {
     float: left;
+    box-sizing: border-box;
+    border-right-width: 1px;
+}
+.owm_card_toolbar_btns li:last-child {
+    border-right-width: 0px;
 }
 .owm_card_toolbar_btns a {
     color: #acacac;
@@ -4424,9 +4492,22 @@ a.owm_topic_list_format.owm_topic_list_unread {
     padding: 16px 0px;
     text-align: center;    
 }
-.owm_card_toolbar_flag,
-.owm_card_toolbar_share {
-    border-left-width: 1px;
+.owm_card_toolbar_1b li {
+    width: 100%;
+}
+.owm_card_toolbar_2b li {
+    width: 50%;
+}
+.owm_card_toolbar_3b li {
+    width: 33%;
+}
+.owm_card_toolbar_4b li {
+    width: 25%;
+    font-size: 81.25%;
+}
+.owm_card_toolbar_5b li {
+    width: 20%;
+    font-size: 81.25%;
 }
 .owm_card_toolbar_quote span {
     padding-left: 24px;
@@ -4541,10 +4622,20 @@ a.owm_topic_list_format.owm_topic_list_unread {
 }
 /* ======== End of the Share styles ======== */
 /* ======== Quote styles ======== */
-.owm_quote {
+.owm_quote,
+.owm_post_content .ow_quote,
+.owm_suitup .ow_quote {
     position: relative;
+    margin-bottom: 10px;
 }
-.owm_quote .ow_quote_header {
+.owm_quote .ow_quote_header b,
+.owm_post_content .ow_quote .ow_quote_header b,
+.owm_suitup .ow_quote .ow_quote_header b {
+    font-weight: inherit;
+}
+.owm_quote .ow_quote_header,
+.owm_post_content .ow_quote .ow_quote_header,
+.owm_suitup .ow_quote .ow_quote_header {
     display: block;
     border-bottom: 1px solid #b9b9b9;
     min-height: 18px;
@@ -4552,11 +4643,15 @@ a.owm_topic_list_format.owm_topic_list_unread {
     font-weight: bold;
     background-color: #f4f4f4;
 }
-.owm_quote .ow_quote_cont_wrap {
+.owm_quote .ow_quote_cont_wrap,
+.owm_post_content .ow_quote .ow_quote_cont_wrap,
+.owm_suitup .ow_quote .ow_quote_cont_wrap {
     display: block;
     padding: 10px;
 }
-.owm_quote blockquote.ow_quote {
+.owm_quote blockquote.ow_quote,
+.owm_post_content blockquote.ow_quote,
+.owm_suitup blockquote.ow_quote {
     border: 1px solid #b9b9b9;
 }
 /* ======== End of the Quote styles ======== */
@@ -4567,9 +4662,12 @@ a.owm_topic_list_format.owm_topic_list_unread {
     width: 74px;
     height: 30px;
     background: #ccc url(images/arr_left_white.png) center center no-repeat;
+    vertical-align: bottom;
+    margin-right: 10px;
 }
 .owm_paging_next {
     background-image: url(images/arr_right_white.png);
+    margin-left: 10px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
        only screen and (min-device-pixel-ratio : 2) {
@@ -4581,5 +4679,18 @@ a.owm_topic_list_format.owm_topic_list_unread {
             background-image: url(images/arr_right_white@2x.png);
             background-size: 21px 33px;
         }        
+}
+.owm_paging_first,
+.owm_paging_last {
+    display: inline-block;
+    line-height: 30px;
+    min-height: 30px;
+    vertical-align: bottom;
+    font-size: 100%;
+}
+.owm_paging_select {
+    display: inline-block;
+    vertical-align: middle;
+    height: 27px;
 }
 /* ======== End of the Paging styles ======== */
