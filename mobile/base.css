@@ -3010,6 +3010,7 @@ only screen and (min-device-pixel-ratio : 2) {
 .owm_content_list_item:last-child {
     border-bottom: 1px solid #c8c8c8;
 }
+/*
 .owm_user_list_item {
     padding-right: 38px;
     min-height: 50px;
@@ -3043,6 +3044,33 @@ only screen and (min-device-pixel-ratio : 2) {
 }
 .owm_user_list_cont:last-child {
     margin-bottom: 0px;
+}
+*/
+.owm_user_list_item {
+    padding-left: 44px;
+    padding-right: 38px;
+    min-height: 34px;
+    position: relative;
+}
+.owm_user_list_item .owm_avatar {
+    width: 36px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    left: 0;
+}
+.owm_user_list_name {
+    display: table;
+    height: 34px;
+}
+.owm_user_list_name span {
+    vertical-align: middle;
+    font-size: 81.25%;
+    font-weight: bold;
+    color: #555;
+    display: table-cell;
 }
 .owm_user_list_item .owm_profile_online {
     position: absolute;
