@@ -2431,13 +2431,6 @@ only screen and (min-device-pixel-ratio : 2) {
 .owm_lbutton:hover {
     text-decoration: none;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-       only screen and (min-device-pixel-ratio : 2) {
-            .owm_lbutton {
-                background-image: url(images/sidebar_lbtn_bg@2x.png);
-                background-size: 29px;
-            }
-}
 .owm_sidebar_msg_block .owm_lbutton {
     color: #929292;
     background: #dedede;
@@ -3929,7 +3922,7 @@ input[type="radio"] ~ label {
        only screen and (min-device-pixel-ratio : 2) { 
         .owm_search_field_icon {
             background-image: url(images/ico_search@2x.png);
-            background-size: 100% auto;
+            background-size: 19px 20px;
         }
 }
 .owm_search_wrap .owm_lbutton {
@@ -4040,7 +4033,7 @@ input[type="radio"] ~ label {
         }
         .owm_forum_additional_views {
             background-image: url(images/ico_eye_small@2x.png);
-            background-size: 9px 9px;
+            background-size: 13px 9px;
         }
 }
 .owm_topic_sticky_icon,
