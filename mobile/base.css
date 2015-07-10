@@ -274,9 +274,9 @@ a {
 a:hover {
     text-decoration: none;
 }
-/*.nav_top {
-    padding: 0px 22px;
-}*/
+.owm_green {
+    color: #339933;
+}
 .owm_nav_menu {
     float: left;
     height: 30px;
@@ -4721,3 +4721,27 @@ body a.owm_suitup-control.active {
     height: 27px;
 }
 /* ======== End of the Paging styles ======== */
+/* ======== Winks styles ======== */
+.owm_wink_back.owm_lbutton {
+    background-color: #dedede;
+}
+.owm_wink_pic {
+    width: 53px;
+    height: 43px;
+    margin-right: -53px;
+    background: url(images/ico_wink.png) no-repeat 0px 0px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio : 2) {
+        .owm_wink_pic {
+            background-image: url(images/ico_wink@2x.png);
+            background-size: 43px 43px;
+        }
+}
+.owm_wink_info {
+    padding-left: 53px;
+}
+.owm_wink_text {
+    color: #4d4d4d;
+}
+/* ======== End of the Winks styles ======== */
