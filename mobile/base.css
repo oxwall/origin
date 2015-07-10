@@ -4006,6 +4006,7 @@ input[type="radio"] ~ label {
     background-position: left center;
     background-repeat: no-repeat;
     display: inline-block;
+    vertical-align: middle;
 }
 .owm_forum_additional_info span a {
     font-size: 100%;
