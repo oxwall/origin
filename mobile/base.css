@@ -3003,7 +3003,6 @@ only screen and (min-device-pixel-ratio : 2) {
 .owm_content_list_item:last-child {
     border-bottom: 1px solid #c8c8c8;
 }
-/*
 .owm_user_list_item {
     padding-right: 38px;
     min-height: 50px;
@@ -3038,7 +3037,6 @@ only screen and (min-device-pixel-ratio : 2) {
 .owm_user_list_cont:last-child {
     margin-bottom: 0px;
 }
-*/
 .owm_user_list_item {
     padding-left: 44px;
     padding-right: 38px;
