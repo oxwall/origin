@@ -1782,10 +1782,10 @@ only screen and (min-device-pixel-ratio : 2) {
 }
 .owm_newsfeed_comment_thumb {
     float: left;
-    margin-right: -34px;
+    margin-right: -60px;
 }
 .owm_newsfeed_comment_info {
-    margin-left: 42px;
+    margin-left: 62px;
 }
 .owm_newsfeed_comment_txt {
     padding: 6px 0px;
@@ -2265,7 +2265,7 @@ only screen and (min-device-pixel-ratio : 2) {
             }
 }
 .owm_photo_string {
-    margin-left: 46px;
+    margin-left: 64px;
     padding: 2px 0px 0px;
     font-size: 81.25%;
 }
@@ -2869,6 +2869,7 @@ input.owm_sidebar_profile_logout {
 }
 .owm_index_photo_item a {
     display: inline-block;
+    background-size: cover;
 }
 .owm_index_photo_item img {
     width: 60px;
@@ -4123,7 +4124,7 @@ input[type="radio"] ~ label {
     height: 150px;
 }
 body .owm_suitup-editor {
-    border-width: 0 0 1px 0;: 
+    border-width: 0 0 1px 0;
 }
 body a.owm_suitup-control:first-child, 
 body span.owm_suitup-control:first-child {
@@ -4726,6 +4727,9 @@ body a.owm_suitup-control.active {
 }
 /* ======== End of the Paging styles ======== */
 /* ======== Winks styles ======== */
+.owm_wink_back {
+    text-transform: capitalize;
+}
 .owm_wink_back.owm_lbutton {
     background-color: #dedede;
 }
@@ -4764,7 +4768,7 @@ body a.owm_suitup-control.active {
 .ow_agerange_to {
     vertical-align: middle;
 }
-/* ======== End os the Search styles ======== */
+/* ======== End of the Search styles ======== */
 /* ======== Bookmark styles ======== */
 .owm_ico_bookmark {
     background: url(images/ico_bookmark.png) no-repeat 0px 0px;
@@ -4784,4 +4788,13 @@ body a.owm_suitup-control.active {
     height: 23px;
     background-position: 0 -5px;
 }
-/* ======== End os the Search styles ======== */
+/* ======== End of the Bookmark styles ======== */
+/* ======== Promo Index styles ======== */
+.place_section > .mobile\.index-SKADATE_MCMP_PromoImageWidget {
+    margin-top: -20px;
+}
+.mobile\.index-SKADATE_MCMP_PromoImageWidget .owm_box_body_cont,
+.mobile\.index-SKADATE_MCMP_PromoImageWidget .owm_box_padding {
+    padding: 0px;
+}
+/* ======== End of the Promo Index styles ======== */
