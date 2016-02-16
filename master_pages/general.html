@@ -7,7 +7,7 @@
 		<div class="ow_header">
 		{*print_var var=$imageControlValues*}
 			{if isset($imageControlValues.headerImage.src)}
-				
+				<div style="background: url({$imageControlValues.headerImage.src}) no-repeat; height: {$imageControlValues.headerImage.height}px;"></div>
 			{else}
 				<div class="ow_header_pic"></div>
 			{/if}
